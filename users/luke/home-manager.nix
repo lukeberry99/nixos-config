@@ -140,12 +140,8 @@ let sources = import ../../nix/sources.nix; in {
 
   programs.git = {
     enable = true;
-    userName = "Mitchell Hashimoto";
-    userEmail = "mitchell.hashimoto@gmail.com";
-    signing = {
-      key = "523D5DC389D273BC";
-      signByDefault = true;
-    };
+    userName = "Luke Berry";
+    userEmail = "lukeberry99@gmail.com";
     aliases = {
       prettylog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(r) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative";
       root = "rev-parse --show-toplevel";
@@ -155,7 +151,7 @@ let sources = import ../../nix/sources.nix; in {
       color.ui = true;
       core.askPass = ""; # needs to be empty to use terminal for ask pass
       credential.helper = "store"; # want to make this more secure
-      github.user = "mitchellh";
+      github.user = "lukeberry99";
       push.default = "tracking";
       init.defaultBranch = "main";
     };
