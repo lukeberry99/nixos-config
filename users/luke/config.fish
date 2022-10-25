@@ -53,7 +53,7 @@ end
 # Vim
 #-------------------------------------------------------------------------------
 # We should move this somewhere else but it works for now
-mkdir -p $HOME/.vim/{backup,swap,undo}
+# mkdir -p $HOME/.vim/{backup,swap,undo}
 
 #-------------------------------------------------------------------------------
 # Prompt
@@ -123,3 +123,5 @@ end
 # `fnix -p go` to get an environment with Go but use the fish shell along
 # with it.
 alias fnix "nix-shell --run fish"
+
+eval "$(fnm env --use-on-cd)"

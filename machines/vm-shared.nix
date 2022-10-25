@@ -87,7 +87,7 @@
     fontDir.enable = true;
 
     fonts = [
-      pkgs.fira-code
+      (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
     ];
   };
 

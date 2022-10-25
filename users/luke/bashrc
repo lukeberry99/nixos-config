@@ -77,3 +77,4 @@ parse_git_branch() {
 # Set default prompt if interactive
 test -n "$PS1" &&
 prompt_color
+eval "$(fnm env --use-on-cd)"

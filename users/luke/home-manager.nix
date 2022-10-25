@@ -26,10 +26,15 @@ let sources = import ../../nix/sources.nix; in {
 
     pkgs.go
     pkgs.gopls
-    pkgs.zig-master
 
     pkgs.tlaplusToolbox
     pkgs.tetex
+
+    pkgs.fnm
+    pkgs.gcc
+
+    pkgs.lazygit
+    pkgs.fortune
   ];
 
   #---------------------------------------------------------------------
@@ -43,6 +48,7 @@ let sources = import ../../nix/sources.nix; in {
     EDITOR = "nvim";
     PAGER = "less -FirSwX";
     MANPAGER = "sh -c 'col -bx | ${pkgs.bat}/bin/bat -l man -p'";
+    
   };
 
   home.file.".gdbinit".source = ./gdbinit;
