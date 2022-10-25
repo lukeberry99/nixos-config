@@ -58,10 +58,6 @@ end
 #-------------------------------------------------------------------------------
 # Prompt
 #-------------------------------------------------------------------------------
-# Do not show any greeting
-set --universal --erase fish_greeting
-function fish_greeting; end
-funcsave fish_greeting
 
 # bobthefish theme
 set -g theme_color_scheme dracula
@@ -123,5 +119,3 @@ end
 # `fnix -p go` to get an environment with Go but use the fish shell along
 # with it.
 alias fnix "nix-shell --run fish"
-
-eval "$(fnm env --use-on-cd)"

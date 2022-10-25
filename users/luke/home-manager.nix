@@ -30,11 +30,12 @@ let sources = import ../../nix/sources.nix; in {
     pkgs.tlaplusToolbox
     pkgs.tetex
 
-    pkgs.fnm
     pkgs.gcc
 
     pkgs.lazygit
     pkgs.fortune
+
+    pkgs.nodejs-16_x
   ];
 
   #---------------------------------------------------------------------
