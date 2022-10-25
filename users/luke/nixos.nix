@@ -10,8 +10,6 @@
     extraGroups = [ "docker" "wheel" ];
     shell = pkgs.fish;
     hashedPassword = "$5$gu2xyWl14uxrbfNd$/NhZFhYSe6jlymIcFBhkC.55uMqCxx29rOqMhLRDl94";
-    openssh.authorizedKeys.keys = [
-    ];
   };
 
   nixpkgs.overlays = import ../../lib/overlays.nix;
