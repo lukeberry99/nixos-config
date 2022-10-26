@@ -31,11 +31,10 @@ let sources = import ../../nix/sources.nix; in {
     pkgs.tetex
 
     pkgs.gcc
-
     pkgs.lazygit
     pkgs.fortune
-
     pkgs.nodejs-16_x
+    pkgs.unzip
   ];
 
   #---------------------------------------------------------------------
